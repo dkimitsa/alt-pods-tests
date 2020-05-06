@@ -4,12 +4,6 @@
 # Log file
 *.log
 
-# BlueJ files
-*.ctxt
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package Files #
 *.jar
 *.war
@@ -31,3 +25,8 @@ gradlew.bat
 # idea
 .idea/
 
+# build folders
+robovm-build/
+
+# ids
+resources/GoogleService-Info.plist
