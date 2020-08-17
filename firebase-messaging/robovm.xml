@@ -1,0 +1,18 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>resources</directory>
+            <directory>../resources</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../libs/firebase/core</path>
+        <path>../libs/firebase/messaging</path>
+    </frameworkPaths>
+</config>
