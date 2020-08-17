@@ -1,0 +1,27 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>resources</directory>
+        </resource>
+        <resource>
+            <directory>resources</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../libs/firebase/core</path>
+        <path>../libs/firebase/gad</path>
+    </frameworkPaths>
+    <frameworks>
+        <framework>GoogleAppMeasurement</framework>
+        <framework>GoogleUtilities</framework>
+        <framework>nanopb</framework>
+        <framework>PromisesObjC</framework>
+        <framework>JavaScriptCore</framework>
+    </frameworks>
+</config>
