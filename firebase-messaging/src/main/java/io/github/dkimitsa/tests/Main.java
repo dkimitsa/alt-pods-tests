@@ -25,22 +25,6 @@ public class Main extends UIApplicationDelegateAdapter {
         // Make the window visible.
         window.makeKeyAndVisible();
 
-        new Thread(() -> {
-            while (true)
-                System.gc();
-        }).start();
-
-        new Thread(() -> {
-            while (true) {
-                String s = "";
-                while (s.length() < 1000_000)
-                    s = s + "1234567890123456789012345678901234567890" +
-                            s.length();
-                if (s.hashCode() == 1)
-                    System.out.println(s);
-            }
-        }).start();
-
         return true;
     }
 
