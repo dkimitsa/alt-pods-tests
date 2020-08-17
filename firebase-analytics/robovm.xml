@@ -8,6 +8,9 @@
         <resource>
             <directory>resources</directory>
         </resource>
+        <resource>
+            <directory>../resources</directory>
+        </resource>
     </resources>
 
     <frameworkPaths>
