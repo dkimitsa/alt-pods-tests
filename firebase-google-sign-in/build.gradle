@@ -22,7 +22,7 @@ repositories {
 
 ext {
     roboVMVersion = "2.3.10-SNAPSHOT"
-    altpodsVersion = "1.7.1-SNAPSHOT"
+    altpodsVersion = "1.10.0-SNAPSHOT"
 }
 
 robovm {

@@ -11,9 +11,6 @@ public class DemoFirebaseGoogleSignIn {
     //   - FirebaseCore.framework
     //   - GoogleUtilities.framework
     //   - PromisesObjC.framework
-    // remoteconfig:
-    //   - FirebaseRemoteConfig.framework
-    //   - FirebaseABTesting.framework
     //
     // Resources:
     //   - GoogleService-Info.plist in resources folder

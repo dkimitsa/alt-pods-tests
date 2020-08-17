@@ -8,21 +8,12 @@
         <resource>
             <directory>resources</directory>
         </resource>
+        <resource>
+            <directory>../resources</directory>
+        </resource>
     </resources>
 
     <frameworkPaths>
         <path>../libs/firebase/signin</path>
     </frameworkPaths>
-
-    <frameworks>
-        <framework>AppAuth</framework>
-        <framework>GTMAppAuth</framework>
-        <framework>GTMSessionFetcher</framework>
-        <framework>LocalAuthentication</framework>
-        <framework>SafariServices</framework>
-        <framework>AuthenticationServices</framework>
-        <framework>SystemConfiguration</framework>
-        <framework>CoreText</framework>
-        <framework>CoreGraphics</framework>
-    </frameworks>
 </config>
