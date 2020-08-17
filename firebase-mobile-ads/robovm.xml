@@ -17,11 +17,4 @@
         <path>../libs/firebase/core</path>
         <path>../libs/firebase/gad</path>
     </frameworkPaths>
-    <frameworks>
-        <framework>GoogleAppMeasurement</framework>
-        <framework>GoogleUtilities</framework>
-        <framework>nanopb</framework>
-        <framework>PromisesObjC</framework>
-        <framework>JavaScriptCore</framework>
-    </frameworks>
 </config>
