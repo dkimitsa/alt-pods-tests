@@ -1,0 +1,28 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>resources</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../libs/firebase/signin</path>
+    </frameworkPaths>
+
+    <frameworks>
+        <framework>AppAuth</framework>
+        <framework>GTMAppAuth</framework>
+        <framework>GTMSessionFetcher</framework>
+        <framework>LocalAuthentication</framework>
+        <framework>SafariServices</framework>
+        <framework>AuthenticationServices</framework>
+        <framework>SystemConfiguration</framework>
+        <framework>CoreText</framework>
+        <framework>CoreGraphics</framework>
+    </frameworks>
+</config>
