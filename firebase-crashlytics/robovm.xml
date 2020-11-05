@@ -6,7 +6,10 @@
     <iosInfoPList>Info.plist.xml</iosInfoPList>
     <resources>
         <resource>
-            <directory>resources</directory>
+            <directory>../resources-common</directory>
+        </resource>
+        <resource>
+            <directory>../resources-google</directory>
         </resource>
     </resources>
 
@@ -16,8 +19,4 @@
         <path>../libs/firebase/analytics</path>
     </frameworkPaths>
 
-    <frameworks>
-<!--        <framework>FirebaseInstallations</framework>-->
-<!--        <framework>nanopb</framework>-->
-    </frameworks>
 </config>

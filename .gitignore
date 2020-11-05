@@ -12,7 +12,8 @@
 
 # alt-pods-tests ignorable
 /libs/
-/resources/
+/deps/
+/resources-google/
 *.iml
 .idea
 

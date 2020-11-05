@@ -24,9 +24,8 @@ gradlew.bat
 
 # idea
 .idea/
+*.iml
 
 # build folders
+build/
 robovm-build/
-
-# ids
-resources/GoogleService-Info.plist
