@@ -1,0 +1,17 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>../resources-common</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../libs/facebook/core</path>
+        <path>../libs/facebook/login</path>
+    </frameworkPaths>
+</config>
