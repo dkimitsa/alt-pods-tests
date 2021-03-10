@@ -45,7 +45,7 @@ cp -R ~/Downloads/Firebase/FirebaseStorage/GTMSessionFetcher.xcframework/ios-arm
 # Google Mobile Ads
 #
 rm -rf gad && mkdir gad
-cp -R ~/Downloads/Firebase/Google-Mobile-Ads-SDK/GoogleMobileAds.xcframework/ios-arm64_i386_x86_64-simulator/GoogleMobileAds.framework gad/
+cp -R ~/Downloads/Firebase/Google-Mobile-Ads-SDK/GoogleMobileAds.xcframework/ios-arm64_x86_64-simulator/GoogleMobileAds.framework gad/
 cp -R ~/Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework/ios-arm64_i386_x86_64-simulator/GoogleAppMeasurement.framework gad/
 cp -R ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework/ios-arm64_i386_x86_64-simulator/nanopb.framework gad/
 cp -R ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework/ios-arm64_i386_x86_64-simulator/GoogleUtilities.framework gad/
