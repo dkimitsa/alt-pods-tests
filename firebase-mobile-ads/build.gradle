@@ -1,11 +1,12 @@
 buildscript {
+    apply from: '../versions.gradle'
     repositories {
         mavenLocal()
         mavenCentral()
         maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
     }
     dependencies {
-        classpath 'com.mobidevelop.robovm:robovm-gradle-plugin:2.3.10-SNAPSHOT'
+        classpath "com.mobidevelop.robovm:robovm-gradle-plugin:${roboVMVersion}"
     }
 }
 
@@ -20,16 +21,11 @@ repositories {
     maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
 }
 
-ext {
-    roboVMVersion = "2.3.10-SNAPSHOT"
-    altpodsVersion = "1.10.0-SNAPSHOT"
-}
-
 robovm {
 }
 
 dependencies {
-    compile "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
-    compile "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    compile "io.github.dkimitsa.robovm:robopods-firebase-google-mobile-ads-ios:$altpodsVersion"
+    implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
+    implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
+    implementation "io.github.dkimitsa.robovm:robopods-firebase-google-mobile-ads-ios:$altpodsVersion"
 }
