@@ -18,5 +18,5 @@
         <path>../libs/firebase/core</path>
         <path>../libs/firebase/analytics</path>
     </frameworkPaths>
-
+    <swiftSupport/> <!-- is required for Firebase 9+ as its swift based -->
 </config>

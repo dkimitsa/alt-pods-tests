@@ -17,4 +17,5 @@
         <path>../libs/firebase/core</path>
         <path>../libs/firebase/auth</path>
     </frameworkPaths>
+    <swiftSupport/> <!-- is required for Firebase 9+ as its swift based -->
 </config>
