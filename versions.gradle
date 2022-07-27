@@ -1,4 +1,4 @@
 ext {
-    roboVMVersion = "2.3.17-SNAPSHOT"
-    altpodsVersion = '1.23.0-SNAPSHOT'
+    roboVMVersion = "2.3.19-SNAPSHOT"
+    altpodsVersion = '1.24.0-SNAPSHOT'
 }

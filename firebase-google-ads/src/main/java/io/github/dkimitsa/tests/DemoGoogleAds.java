@@ -2,16 +2,20 @@ package io.github.dkimitsa.tests;
 
 
 import org.robovm.apple.coregraphics.CGRect;
+import org.robovm.apple.foundation.NSArray;
 import org.robovm.apple.foundation.NSError;
 import org.robovm.apple.uikit.UIViewController;
 import org.robovm.objc.block.VoidBlock2;
 import org.robovm.pods.google.mobileads.*;
+
+import static org.robovm.pods.google.mobileads.GADRequest.GADSimulatorID;
 
 public class DemoGoogleAds {
     // goals:
     // - check that pod is able to link/run with dependencies
     static {
         // configure once
+        GADMobileAds.sharedInstance().getRequestConfiguration().setTestDeviceIdentifiers(new NSArray<>(GADSimulatorID()));
         GADMobileAds.sharedInstance().start(status -> {
             System.out.println("GADMobileAds started with status == " + status);
         });
