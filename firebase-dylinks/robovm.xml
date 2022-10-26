@@ -14,7 +14,9 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/core</path>
-        <path>../libs/firebase/dylinks</path>
+        <path variant="simulator">../libs/firebase/sim/core</path>
+        <path variant="simulator">../libs/firebase/sim/dylinks</path>
+        <path variant="device">../libs/firebase/device/core</path>
+        <path variant="device">../libs/firebase/device/dylinks</path>
     </frameworkPaths>
 </config>

@@ -12,9 +12,11 @@
             <directory>../resources-google</directory>
         </resource>
     </resources>
-
+    <swiftSupport/>
     <frameworkPaths>
-        <path>../libs/firebase/core</path>
-        <path>../libs/firebase/storage</path>
+        <path variant="simulator">../libs/firebase/sim/core</path>
+        <path variant="simulator">../libs/firebase/sim/storage</path>
+        <path variant="device">../libs/firebase/device/core</path>
+        <path variant="device">../libs/firebase/device/storage</path>
     </frameworkPaths>
 </config>

@@ -14,6 +14,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/signin</path>
+        <path variant="simulator">../libs/firebase/sim/signin</path>
+        <path variant="device">../libs/firebase/device/signin</path>
     </frameworkPaths>
 </config>

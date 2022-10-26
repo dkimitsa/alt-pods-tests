@@ -14,7 +14,8 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/gad</path>
+        <path variant="simulator">../libs/firebase/sim/gad</path>
+        <path variant="device">../libs/firebase/device/gad</path>
     </frameworkPaths>
 
 </config>

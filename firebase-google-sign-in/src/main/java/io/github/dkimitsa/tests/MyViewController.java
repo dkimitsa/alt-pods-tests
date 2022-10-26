@@ -31,6 +31,6 @@ public class MyViewController extends UIViewController {
     }
 
     private void demo() {
-        DemoFirebaseGoogleSignIn.demo();
+        DemoFirebaseGoogleSignIn.demo(this);
     }
 }

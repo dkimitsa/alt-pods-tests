@@ -1,6 +1,8 @@
 package io.github.dkimitsa.tests;
 
 
+import org.robovm.apple.uikit.UIViewController;
+import org.robovm.pods.firebase.googlesignin.GIDConfiguration;
 import org.robovm.pods.firebase.googlesignin.GIDSignIn;
 
 public class DemoFirebaseGoogleSignIn {
@@ -19,12 +21,11 @@ public class DemoFirebaseGoogleSignIn {
     // - check that pod is able to link/run with dependencies
 
 
-    static {
-        // configure once
-        GIDSignIn.sharedInstance().setClientID("YOUR_CLIENT_ID");
-    }
 
-    public static void demo() {
-        System.out.println("demo");
+    public static void demo(UIViewController vc) {
+        GIDSignIn.sharedInstance().signIn(new GIDConfiguration("YOUR_CLIENT_ID"), vc, (gidGoogleUser, nsError) -> {
+            if (gidGoogleUser != null) System.out.println(gidGoogleUser.getUserID());
+            if (nsError != null) System.out.println(nsError);
+        });
     }
 }

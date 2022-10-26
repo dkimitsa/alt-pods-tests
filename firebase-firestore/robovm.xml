@@ -14,7 +14,9 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/core</path>
-        <path>../libs/firebase/firestore</path>
+        <path variant="simulator">../libs/firebase/sim/core</path>
+        <path variant="simulator">../libs/firebase/sim/firestore</path>
+        <path variant="device">../libs/firebase/device/core</path>
+        <path variant="device">../libs/firebase/device/firestore</path>
     </frameworkPaths>
 </config>
