@@ -2,57 +2,25 @@
 
 set -e
 
-is_device_arch=0
-if [ "$1" == "device" ]
-then
-  echo "Copying DEVICE libs"
-  is_device_arch=1
-else
-  echo "Copying SIM libs"
-fi
-
 
 function copy() {
   local from=$1
-  local framework=$2
-  local to
-  if [ $is_device_arch == "1" ]; then to="dev/${3}"; else to="sim/${3}"; fi
-  local arch_dirs
-  if [ $is_device_arch == "1" ]
-  then
-     arch_dirs=("ios-arm64" "ios-arm64_armv7")
-  else
-     arch_dirs=("ios-arm64_x86_64-simulator" "ios-arm64_i386_x86_64-simulator")
-  fi
-
-  for arch in "${arch_dirs[@]}"
-  do
-     local full_path="${from}/${arch}/${framework}"
-     if [ -d "$full_path" ]
-     then
-       cp -R "$full_path" "$to"
-       return 
-     fi
-  done
-
-  >&2 echo "Failed to locate $framework in $from"
-  exit -1
+  local to=$2
+  cp -R "$from" "$to"
 }
 
 function clean_dir() {
-  local target_dir
-  if [ $is_device_arch == "1" ]; then target_dir="dev/${1}"; else target_dir="sim/${1}"; fi
-  rm -rf "$target_dir" && mkdir -p "$target_dir"
+  rm -rf "$1" && mkdir -p "$1"
 }
 
 #
 # Core
 #
 clean_dir core
-copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseCore.xcframework FirebaseCore.framework core
-copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseCoreInternal.xcframework FirebaseCoreInternal.framework core
-copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework GoogleUtilities.framework core
-copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework FBLPromises.framework core
+copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseCore.xcframework core
+copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseCoreInternal.xcframework core
+copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework core
+copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework core
 #copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseRemoteConfigSwift.xcframework FirebaseRemoteConfigSwift.framework core
 #copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework FirebaseSharedSwift.framework core
 
@@ -60,10 +28,10 @@ copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework FBLPromises.
 # Analytics
 #
 clean_dir analytics
-copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseAnalytics.xcframework FirebaseAnalytics.framework analytics
-copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseInstallations.xcframework FirebaseInstallations.framework analytics
-copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework GoogleAppMeasurement.framework analytics
-copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework nanopb.framework analytics
+copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseAnalytics.xcframework analytics
+copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseInstallations.xcframework analytics
+copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework analytics
+copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework analytics
 #copy ~/Downloads/Firebase/FirebaseAnalytics/FirebaseCoreDiagnostics.xcframework FirebaseCoreDiagnostics.framework analytics
 #copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleDataTransport.xcframework GoogleDataTransport.framework analytics
 
@@ -71,46 +39,46 @@ copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework nanopb.framework 
 # Auth
 #
 clean_dir auth
-copy ~/Downloads/Firebase/FirebaseAuth/FirebaseAuth.xcframework FirebaseAuth.framework auth
-copy ~/Downloads/Firebase/FirebaseAuth/GTMSessionFetcher.xcframework GTMSessionFetcher.framework auth
+copy ~/Downloads/Firebase/FirebaseAuth/FirebaseAuth.xcframework auth
+copy ~/Downloads/Firebase/FirebaseAuth/GTMSessionFetcher.xcframework auth
 
 #
 # Firestore
 #
 clean_dir firestore
-copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework nanopb.framework firestore
+copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework firestore
 
 #
 # Storage
 #
 clean_dir storage
-copy ~/Downloads/Firebase/FirebaseStorage/FirebaseStorage.xcframework FirebaseStorage.framework storage
-copy ~/Downloads/Firebase/FirebaseStorage/GTMSessionFetcher.xcframework GTMSessionFetcher.framework storage
-copy ~/Downloads/Firebase/FirebaseMLModelDownloader/SwiftProtobuf.xcframework SwiftProtobuf.framework storage
+copy ~/Downloads/Firebase/FirebaseStorage/FirebaseStorage.xcframework storage
+copy ~/Downloads/Firebase/FirebaseStorage/GTMSessionFetcher.xcframework storage
+copy ~/Downloads/Firebase/FirebaseMLModelDownloader/SwiftProtobuf.xcframework storage
 
 
 #
 # Crashlytics
 #
 clean_dir crashlytics
-copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework FirebaseCrashlytics.framework crashlytics
-copy ~/Downloads/Firebase/FirebaseCrashlytics/GoogleDataTransport.xcframework GoogleDataTransport.framework crashlytics
+copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework crashlytics
+copy ~/Downloads/Firebase/FirebaseCrashlytics/GoogleDataTransport.xcframework crashlytics
 
 #
 # Google Mobile Ads
 #
 clean_dir gad
-copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/GoogleMobileAds.xcframework GoogleMobileAds.framework gad
-copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework GoogleAppMeasurement.framework gad
-copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework GoogleUtilities.framework gad
-copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework FBLPromises.framework gad
-copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework nanopb.framework gad
+copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/GoogleMobileAds.xcframework gad
+copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleAppMeasurement.xcframework gad
+copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework gad
+copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework gad
+copy ~/Downloads/Firebase/FirebaseAnalytics/nanopb.xcframework gad
 
 #
 # Google SignIn
 #
 clean_dir signin
-copy ~/Downloads/Firebase/GoogleSignIn/GoogleSignIn.xcframework GoogleSignIn.framework signin
-copy ~/Downloads/Firebase/GoogleSignIn/AppAuth.xcframework AppAuth.framework signin
-copy ~/Downloads/Firebase/GoogleSignIn/GTMAppAuth.xcframework GTMAppAuth.framework signin
-copy ~/Downloads/Firebase/GoogleSignIn/GTMSessionFetcher.xcframework GTMSessionFetcher.framework signin
+copy ~/Downloads/Firebase/GoogleSignIn/GoogleSignIn.xcframework signin
+copy ~/Downloads/Firebase/GoogleSignIn/AppAuth.xcframework signin
+copy ~/Downloads/Firebase/GoogleSignIn/GTMAppAuth.xcframework signin
+copy ~/Downloads/Firebase/GoogleSignIn/GTMSessionFetcher.xcframework signin

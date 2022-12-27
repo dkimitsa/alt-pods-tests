@@ -14,10 +14,8 @@
     </resources>
 
     <frameworkPaths>
-        <path variant="simulator">../libs/firebase/sim/analytics</path>
-        <path variant="simulator">../libs/firebase/sim/core</path>
-        <path variant="device">../libs/firebase/device/analytics</path>
-        <path variant="device">../libs/firebase/device/core</path>
+        <path>../libs/firebase/analytics</path>
+        <path>../libs/firebase/core</path>
     </frameworkPaths>
 
     <swiftSupport/> <!-- is required for Firebase 9+ as its swift based -->
