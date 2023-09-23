@@ -12,7 +12,7 @@
             <directory>../resources-google</directory>
         </resource>
     </resources>
-    <swiftSupport/>
+
     <frameworkPaths>
         <path>../libs/firebase/core</path>
         <path>../libs/firebase/storage</path>
