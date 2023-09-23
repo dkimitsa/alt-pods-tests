@@ -1,23 +1,19 @@
 package io.github.dkimitsa.tests;
 
 
+import org.robovm.pods.facebook.corebasics.FBSDKBase64;
 
-public class DemoFirebaseCore {
+public class DemoFirebaseCoreBasics {
 
     // pre-requirements:
     // frameworks required:
-    // core:
-    //   - FirebaseCore.framework
-    //   - GoogleUtilities.framework
-    //   - PromisesObjC.framework
+    //   - FBSDKCoreKit_Basics.framework
 
     // goals:
     // - check that pod is able to link/run with dependencies
-    static {
-        // configure once
-    }
 
     public static void demo() {
+        new FBSDKBase64();
         System.out.println("demo");
     }
 }

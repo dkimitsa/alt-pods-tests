@@ -13,6 +13,7 @@
 # alt-pods-tests ignorable
 /libs/*
 !/libs/copy_firebase_libs.sh
+!/libs/copy_facebook_libs.sh
 /deps/
 /resources-google/
 *.iml

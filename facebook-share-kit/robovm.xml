@@ -13,7 +13,7 @@
     <frameworkPaths>
         <path>../libs/facebook/corebasics</path>
         <path>../libs/facebook/core</path>
-        <path>../libs/facebook/login</path>
+        <path>../libs/facebook/share</path>
     </frameworkPaths>
 
     <tools>

@@ -31,6 +31,6 @@ public class MyViewController extends UIViewController {
     }
 
     private void demo() {
-        DemoFacebookLogin.demo();
+        DemoFirebaseCoreBasics.demo();
     }
 }

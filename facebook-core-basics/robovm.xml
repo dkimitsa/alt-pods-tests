@@ -12,8 +12,6 @@
 
     <frameworkPaths>
         <path>../libs/facebook/corebasics</path>
-        <path>../libs/facebook/core</path>
-        <path>../libs/facebook/login</path>
     </frameworkPaths>
 
     <tools>
@@ -23,5 +21,4 @@
             </flags>
         </linker>
     </tools>
-
 </config>

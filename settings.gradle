@@ -1,5 +1,12 @@
 include ':adapty'
+include ':facebook-core-basics'
+include ':facebook-core'
 include ':facebook-login-kit'
+include ':facebook-aem'
+include ':facebook-audience'
+include ':facebook-gaming-services-kit'
+include ':facebook-share-kit'
+
 include ':firebase-analytics'
 include ':firebase-auth'
 include ':firebase-core'

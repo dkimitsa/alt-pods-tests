@@ -27,5 +27,5 @@ robovm {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-facebook-login-ios:$altpodsVersion"
+    implementation "io.github.dkimitsa.robovm:robopods-facebook-share-ios:$altpodsVersion"
 }
