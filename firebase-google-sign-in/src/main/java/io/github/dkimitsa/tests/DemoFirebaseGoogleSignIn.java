@@ -23,8 +23,8 @@ public class DemoFirebaseGoogleSignIn {
 
 
     public static void demo(UIViewController vc) {
-        GIDSignIn.sharedInstance().signIn(new GIDConfiguration("YOUR_CLIENT_ID"), vc, (gidGoogleUser, nsError) -> {
-            if (gidGoogleUser != null) System.out.println(gidGoogleUser.getUserID());
+        GIDSignIn.sharedInstance().signIn(vc, (gidGoogleUser, nsError) -> {
+            if (gidGoogleUser != null) System.out.println(gidGoogleUser.getUser().getUserID());
             if (nsError != null) System.out.println(nsError);
         });
     }

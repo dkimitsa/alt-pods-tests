@@ -11,7 +11,8 @@
 .mtj.tmp/
 
 # alt-pods-tests ignorable
-/libs/
+/libs/*
+!/libs/copy_firebase_libs.sh
 /deps/
 /resources-google/
 *.iml
@@ -28,3 +29,7 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+/gradle/
+/.gradle/
+/gradlew
+/gradlew.bat

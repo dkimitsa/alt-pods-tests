@@ -1,0 +1,31 @@
+buildscript {
+    apply from: '../versions.gradle'
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath "com.mobidevelop.robovm:robovm-gradle-plugin:${roboVMVersion}"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'robovm'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+robovm {
+}
+
+dependencies {
+    implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
+    implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
+    implementation "io.github.dkimitsa.robovm:robopods-firebase-google-ump-ios:$altpodsVersion"
+}

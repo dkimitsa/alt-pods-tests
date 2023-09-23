@@ -14,10 +14,16 @@
     </resources>
 
     <frameworkPaths>
-        <path variant="simulator">../libs/firebase/sim/core</path>
-        <path variant="simulator">../libs/firebase/sim/auth</path>
-        <path variant="device">../libs/firebase/device/core</path>
-        <path variant="device">../libs/firebase/device/auth</path>
+        <path>../libs/firebase/core</path>
+        <path>../libs/firebase/auth</path>
     </frameworkPaths>
     <swiftSupport/> <!-- is required for Firebase 9+ as its swift based -->
+
+    <tools>
+        <linker>
+            <flags>
+                <flag>-ld_classic</flag>  <!-- Quick fix for Xcode15 -->
+            </flags>
+        </linker>
+    </tools>
 </config>
