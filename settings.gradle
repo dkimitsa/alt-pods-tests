@@ -9,6 +9,7 @@ include ':facebook-share-kit'
 
 include ':firebase-analytics'
 include ':firebase-auth'
+include ':firebase-appcheck'
 include ':firebase-core'
 include ':firebase-crashlytics'
 include ':firebase-database'

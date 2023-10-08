@@ -9,6 +9,7 @@ set -e
 gradle -no-daemon -info -b firebase-core/build.gradle launchIPhoneSimulator
 gradle -no-daemon -info -b firebase-analytics/build.gradle launchIPhoneSimulator
 gradle -no-daemon -info -b firebase-auth/build.gradle launchIPhoneSimulator
+gradle -no-daemon -info -b firebase-appcheck/build.gradle launchIPhoneSimulator
 gradle -no-daemon -info -b firebase-crashlytics/build.gradle launchIPhoneSimulator
 gradle -no-daemon -info -b firebase-database/build.gradle launchIPhoneSimulator
 gradle -no-daemon -info -b firebase-dylinks/build.gradle launchIPhoneSimulator

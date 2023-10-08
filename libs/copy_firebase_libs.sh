@@ -39,6 +39,11 @@ copy ~/Downloads/Firebase/FirebaseAuth/FirebaseAppCheckInterop.xcframework auth
 copy ~/Downloads/Firebase/FirebaseAuth/RecaptchaInterop.xcframework auth
 
 #
+# AppCheck
+#
+copy ~/Downloads/Firebase/FirebaseAppCheck/FirebaseAppCheck.xcframework appcheck
+copy ~/Downloads/Firebase/FirebaseAppCheck/FirebaseAppCheckInterop.xcframework appcheck
+#
 # Crashlytics
 #
 copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework crashlytics

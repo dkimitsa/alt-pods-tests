@@ -1,0 +1,28 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>../resources-common</directory>
+        </resource>
+        <resource>
+            <directory>../resources-google</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../libs/firebase/core</path>
+        <path>../libs/firebase/appcheck</path>
+    </frameworkPaths>
+
+    <tools>
+        <linker>
+            <flags>
+                <flag>-ld_classic</flag>  <!-- Quick fix for Xcode15 -->
+            </flags>
+        </linker>
+    </tools>
+</config>
