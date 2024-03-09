@@ -14,6 +14,7 @@
     </resources>
 
     <frameworkPaths>
+        <path>../libs/firebase/core</path>
         <path>../libs/firebase/gad</path>
     </frameworkPaths>
 
