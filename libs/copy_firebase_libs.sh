@@ -54,6 +54,7 @@ copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseCrashlytics.xcframework cr
 copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseSessions.xcframework crashlytics
 copy ~/Downloads/Firebase/FirebaseCrashlytics/GoogleDataTransport.xcframework crashlytics
 copy ~/Downloads/Firebase/FirebaseCrashlytics/Promises.xcframework crashlytics
+copy ~/Downloads/Firebase/FirebaseCrashlytics/FirebaseRemoteConfigInterop.xcframework crashlytics
 
 #
 # FirebaseDatabase
@@ -119,6 +120,7 @@ copy ~/Downloads/Firebase/FirebaseMessaging/GoogleDataTransport.xcframework mess
 copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseABTesting.xcframework remoteconfig
 copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseRemoteConfig.xcframework remoteconfig
 copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseSharedSwift.xcframework remoteconfig
+copy ~/Downloads/Firebase/FirebaseRemoteConfig/FirebaseRemoteConfigInterop.xcframework remoteconfig
 
 #
 # Storage
