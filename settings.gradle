@@ -1,4 +1,6 @@
 include ':adapty'
+include ':cleverads'
+
 include ':facebook-core-basics'
 include ':facebook-core'
 include ':facebook-login-kit'
