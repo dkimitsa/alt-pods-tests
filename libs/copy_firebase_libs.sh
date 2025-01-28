@@ -94,8 +94,11 @@ copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/UserMessagingPlatform.xcframewor
 # Google SignIn
 #
 copy ~/Downloads/Firebase/GoogleSignIn/AppAuth.xcframework signin
+copy ~/Downloads/Firebase/GoogleSignIn/AppCheckCore.xcframework signin
 copy ~/Downloads/Firebase/GoogleSignIn/GTMAppAuth.xcframework signin
 copy ~/Downloads/Firebase/GoogleSignIn/GTMSessionFetcher.xcframework signin
+copy ~/Downloads/Firebase/FirebaseAnalytics/FBLPromises.xcframework signin
+copy ~/Downloads/Firebase/FirebaseAnalytics/GoogleUtilities.xcframework signin
 copy ~/Downloads/Firebase/GoogleSignIn/GoogleSignIn.xcframework signin
 
 #
