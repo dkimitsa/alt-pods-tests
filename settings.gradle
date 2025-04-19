@@ -24,3 +24,5 @@ include ':firebase-remoteconfig'
 include ':firebase-storage'
 include ':firebase-google-ump'
 include ':firebase-installation'
+
+include ':cocoatouch-swift-storekit'

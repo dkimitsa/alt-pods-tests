@@ -1,0 +1,47 @@
+buildscript {
+    apply from: '../versions.gradle'
+    repositories {
+        mavenLocal()
+        mavenCentral()
+        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    }
+    dependencies {
+        classpath "com.mobidevelop.robovm:robovm-gradle-plugin:${roboVMVersion}"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
+apply plugin: 'java'
+apply plugin: 'kotlin'
+apply plugin: 'robovm'
+
+repositories {
+    mavenLocal()
+    mavenCentral()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+robovm {
+}
+
+compileKotlin {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+}
+
+kotlin {
+    jvmToolchain(17)
+}
+
+dependencies {
+    implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
+    implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
+    implementation "io.github.dkimitsa.robovm:robopods-storekit-swift:18.2.0.1-SNAPSHOT"
+    implementation "io.github.dkimitsa.robovm:kotlinx-coroutines-robovm:0.1-SNAPSHOT"
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+}

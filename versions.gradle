@@ -1,4 +1,5 @@
 ext {
     roboVMVersion = "2.3.23-SNAPSHOT"
-    altpodsVersion = '1.46.0-SNAPSHOT'
+    altpodsVersion = '1.48.0-SNAPSHOT'
+    kotlin_version = '1.9.25'
 }
