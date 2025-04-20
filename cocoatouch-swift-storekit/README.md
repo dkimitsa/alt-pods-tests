@@ -1,6 +1,6 @@
 # StoreKitRvm demo application 
 
-Demonstrates usage of [StoreKitRvm](https://github.com/dkimitsa/robovm-cocoatouch-swift/storekit) bindings.
+Demonstrates usage of [StoreKitRvm](https://github.com/dkimitsa/robovm-cocoatouch-swift/tree/main/storekit) bindings.
 
 Port (mostly) of Apple's [Implementing a store in your app using the StoreKit API](https://developer.apple.com/documentation/storekit/implementing-a-store-in-your-app-using-the-storekit-api) into kotlin using [StoreKitRvm]() bindings.
 Uses kotlin suspendable API to keep code flow same as Apple's sample. 
