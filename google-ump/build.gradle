@@ -3,7 +3,7 @@ buildscript {
     repositories {
         mavenLocal()
         mavenCentral()
-        maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+        maven { url 'https://central.sonatype.com/repository/maven-snapshots/' }
     }
     dependencies {
         classpath "com.mobidevelop.robovm:robovm-gradle-plugin:${roboVMVersion}"
@@ -18,7 +18,7 @@ targetCompatibility = 1.8
 repositories {
     mavenLocal()
     mavenCentral()
-    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven { url 'https://central.sonatype.com/repository/maven-snapshots/' }
 }
 
 robovm {
@@ -27,5 +27,5 @@ robovm {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-firebase-google-mobile-ads-ios:$altpodsVersion"
+    implementation "io.github.dkimitsa.robovm:robopods-google-ump-ios:$altpodsVersion"
 }

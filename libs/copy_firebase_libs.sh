@@ -65,11 +65,6 @@ copy ~/Downloads/Firebase/FirebaseDatabase/FirebaseSharedSwift.xcframework db
 copy ~/Downloads/Firebase/FirebaseDatabase/leveldb.xcframework db
 
 #
-# FirebaseDynamicLinks
-#
-copy ~/Downloads/Firebase/FirebaseDynamicLinks/FirebaseDynamicLinks.xcframework dylinks
-
-#
 # Firestore
 #
 copy ~/Downloads/Firebase/FirebaseFirestore/FirebaseAppCheckInterop.xcframework firestore
@@ -87,8 +82,8 @@ copy ~/Downloads/Firebase/FirebaseFirestore/openssl_grpc.xcframework firestore
 #
 # Google Mobile Ads
 #
-copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/GoogleMobileAds.xcframework gad
-copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/UserMessagingPlatform.xcframework gad
+copy ~/Downloads/GoogleMobileAdsSdkiOS/GoogleMobileAds.xcframework gad
+copy ~/Downloads/GoogleMobileAdsSdkiOS/UserMessagingPlatform.xcframework gad
 
 #
 # Google SignIn
@@ -104,7 +99,7 @@ copy ~/Downloads/Firebase/GoogleSignIn/GoogleSignIn.xcframework signin
 #
 # UserMessagingPlatform
 #
-copy ~/Downloads/Firebase/Google-Mobile-Ads-SDK/UserMessagingPlatform.xcframework ump
+copy ~/Downloads/GoogleMobileAdsSdkiOS/UserMessagingPlatform.xcframework unp
 
 #
 # FirebaseInstallations
