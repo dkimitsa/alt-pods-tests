@@ -27,5 +27,5 @@ robovm {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-google-ump-ios:$altpodsVersion"
+    implementation "io.github.dkimitsa.robovm:robopods-google-ump-ios:3.1.0.0"
 }

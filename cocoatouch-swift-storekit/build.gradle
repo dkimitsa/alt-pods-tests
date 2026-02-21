@@ -39,8 +39,8 @@ kotlin {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-storekit-swift:18.2.0.1-SNAPSHOT"
-    implementation "io.github.dkimitsa.robovm:kotlinx-coroutines-robovm:0.1-SNAPSHOT"
+    implementation "com.mobidevelop.robovm:robopods-swift-storekit2-kt:18.2.0.1"
+    implementation "io.github.dkimitsa.robovm:kotlinx-coroutines-robovm:1.9.0.1"
 
     implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.9.0"
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"

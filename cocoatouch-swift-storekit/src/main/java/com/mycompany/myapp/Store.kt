@@ -9,6 +9,7 @@ import kotlinx.coroutines.launch
 import org.robovm.apple.foundation.*
 import org.robovm.pods.cocoatouch.storekitrvm.*
 import org.robovm.pods.cocoatouch.storekitrvm.Product.SubscriptionInfo.RenewalState
+import java.util.Comparator
 
 // Abstract:
 // The class responsible for requesting products from the App Store and starting purchases.
@@ -261,7 +262,7 @@ class Store(scope: CoroutineScope) {
     fun emoji(productId: String): String  = productsIdToEmoji[productId] ?: ":("
 
     private fun List<Product>.sortedByPrice(): List<Product> {
-        return this.sortedWith { p0, p1 -> NSDecimal.compare(p0.price, p1.price).value().toInt() }
+        return this.sortedWith(Comparator { p0, p1 -> p0.price.compare(p1.price).value().toInt() })
     }
 
     // Get a subscription's level of service using the product ID.

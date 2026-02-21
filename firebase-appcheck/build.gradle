@@ -27,5 +27,7 @@ robovm {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-firebase-app-check-ios:$altpodsVersion"
+
+    implementation platform("io.github.dkimitsa.robovm:robopods-firebase-bom:$podFirebaseVersion")
+    implementation "io.github.dkimitsa.robovm:robopods-firebase-app-check-ios"
 }

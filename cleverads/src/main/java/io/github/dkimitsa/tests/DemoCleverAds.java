@@ -7,7 +7,7 @@ import org.robovm.apple.uikit.UIApplicationLaunchOptions;
 import org.robovm.apple.uikit.UIView;
 import org.robovm.apple.uikit.UIViewController;
 import org.robovm.objc.block.VoidBlock1;
-import org.robovm.pods.clearads.*;
+import org.robovm.pods.cleverads.*;
 
 public class DemoCleverAds {
 

@@ -1,5 +1,8 @@
 ext {
-    roboVMVersion = "2.3.24-SNAPSHOT"
-    altpodsVersion = '1.52.0-SNAPSHOT'
+    roboVMVersion = "2.3.24"
+    podFirebaseVersion = '12.9.0.0'
+    podFacebookVersion = '18.0.3.0'
+    podFacebookAudienceVersion = '6.21.0.0'
+    podGadVersion = '13.0.0.0'
     kotlin_version = '1.9.25'
 }
