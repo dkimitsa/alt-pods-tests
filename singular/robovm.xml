@@ -1,0 +1,30 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>../resources-common</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../../robovm-robopods/.robopods-wip</path>
+    </frameworkPaths>
+
+    <frameworks>
+        <framework>Singular</framework>
+        <framework>AdSupport</framework>
+        <framework>Security</framework>
+        <framework>SystemConfiguration</framework>
+        <framework>WebKit</framework>
+        <framework>StoreKit</framework>
+    </frameworks>
+
+    <libs>
+        <lib>z</lib>
+        <lib>sqlite3</lib>
+    </libs>
+</config>

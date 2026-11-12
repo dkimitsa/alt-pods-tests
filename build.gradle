@@ -13,7 +13,23 @@ tasks.register("validateFrameworks") {
             'Firebase'                                         : stripPatch(podFirebaseVersion),
             'GoogleMobileAdsSdkiOS'                            : stripPatch(podGadVersion),
             'CleverAdsSolutions/CleverAdsSolutions.xcframework': stripPatch(podCleverAdsVersion),
-            'GoogleSignIn'                                     : stripPatch(podGoogleSignInVersion)
+            'GoogleSignIn'                                     : stripPatch(podGoogleSignInVersion),
+            'AppLovinSDK.xcframework'                          : stripPatch(podAppLovinVersion),
+            'AppsFlyerLib.xcframework'                         : stripPatch(podAppsFlyerVersion),
+            'Singular.xcframework'                             : stripPatch(podSingularVersion),
+            'TenjinSDK.xcframework'                            : stripPatch(podTenjinVersion),
+            'IronSource'                                       : stripPatch(podIronSourceVersion),
+            'BranchSDK.xcframework'                            : stripPatch(podBranchMetricsVersion),
+            'OneSignal'                                        : stripPatch(podOneSignalVersion),
+            'RevenueCat.xcframework'                           : stripPatch(podRevenueCatVersion),
+            'AdjustSdk-iOS-tvOS-Dynamic-xcframework'           : stripPatch(podAdjustSdkVersion),
+            'UnityAds'                                         : stripPatch(podUnityAdsVersion),
+            'IASDKCore.xcframework'                            : stripPatch(podFyberVersion),
+            'InMobi-iOS-SDK'                                   : stripPatch(podInMobiVersion),
+            'AppLovinAdapter'                                  : stripPatch(podGadAppLovinAdapterVersion),
+            'MetaAdapter'                                      : stripPatch(podGadFacebookAdapterVersion),
+            'InMobiAdapter'                                    : stripPatch(podGadInMobiAdapterVersion),
+            'DGCharts.xcframework'                             : stripPatch(podChartsVersion)
         ]
 
         File wipDir = file("../robovm-robopods/.robopods-wip")

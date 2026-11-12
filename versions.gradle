@@ -1,5 +1,7 @@
 ext {
     roboVMVersion = "2.3.27"
+    kotlin_version = '1.9.25'
+
     podFirebaseVersion = '13.1.1.0'
     podFacebookVersion = '19.0.1.0'
     podFacebookAudienceVersion = '6.22.1.0'
@@ -8,5 +10,20 @@ ext {
     podGoogleSignInVersion = '10.1.0.0'
     podGoogleUmpVersion = '3.1.0.0'
     podAdaptyVersion = '1.17.7.0'
-    kotlin_version = '1.9.25'
+    podAppLovinVersion = '13.7.0.0'
+    podAppsFlyerVersion = '7.0.4.0'
+    podSingularVersion = '12.16.0.0'
+    podTenjinVersion = '1.20.1.0'
+    podIronSourceVersion = '9.7.0.0'
+    podBranchMetricsVersion = '3.14.2.0'
+    podOneSignalVersion = '5.8.1.0'
+    podRevenueCatVersion = '5.83.0.0'
+    podAdjustSdkVersion = '5.8.1.0'
+    podUnityAdsVersion = '4.20.1.0'
+    podFyberVersion = '8.5.1.0'
+    podInMobiVersion = '11.4.1.0'
+    podGadAppLovinAdapterVersion = '13.7.0.0.0'
+    podGadFacebookAdapterVersion = '6.22.1.0.0'
+    podGadInMobiAdapterVersion = '11.5.0.0.0'
+    podChartsVersion = '5.1.0.0'
 }

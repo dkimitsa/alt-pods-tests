@@ -1,0 +1,18 @@
+<config>
+    <executableName>${app.executable}</executableName>
+    <mainClass>${app.mainclass}</mainClass>
+    <os>ios</os>    
+    <target>ios</target>
+    <iosInfoPList>Info.plist.xml</iosInfoPList>
+    <resources>
+        <resource>
+            <directory>../resources-common</directory>
+        </resource>
+    </resources>
+
+    <frameworkPaths>
+        <path>../../robovm-robopods/.robopods-wip/InMobiAdapter</path>
+        <path>../../robovm-robopods/.robopods-wip/InMobi-iOS-SDK</path>
+        <path>../../robovm-robopods/.robopods-wip/GoogleMobileAdsSdkiOS</path>
+    </frameworkPaths>
+</config>

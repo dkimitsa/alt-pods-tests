@@ -31,6 +31,22 @@ DEFAULT_MODULES=(
     "google-mobile-ads"
     "google-ump"
     "cleverads"
+    "applovinsdk"
+    "appsflyer"
+    "singular"
+    "tenjin"
+    "ironsource"
+    "branchmetrics"
+    "onesignal"
+    "revenuecat"
+    "adjustsdk"
+    "unityads"
+    "fyber"
+    "inmobi"
+    "google-mobile-ads-applovin"
+    "google-mobile-ads-facebook"
+    "google-mobile-ads-inmobi"
+    "charts"
 )
 
 MODULES=("${@:-${DEFAULT_MODULES[@]}}")
