@@ -11,7 +11,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/facebook/audience</path>
+        <path>../../robovm-robopods/.robopods-wip/FBAudienceNetwork/Static</path>
     </frameworkPaths>
 
     <tools>

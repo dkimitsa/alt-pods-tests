@@ -11,9 +11,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/facebook/corebasics</path>
-        <path>../libs/facebook/core</path>
-        <path>../libs/facebook/login</path>
+        <path>../../robovm-robopods/.robopods-wip/Facebook</path>
     </frameworkPaths>
 
     <tools>

@@ -11,7 +11,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/adapty</path>
+        <path>../../robovm-robopods/adapty/cocoapods</path>
     </frameworkPaths>
 
     <tools>

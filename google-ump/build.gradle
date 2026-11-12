@@ -12,8 +12,10 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'robovm'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 repositories {
     mavenLocal()
@@ -27,5 +29,5 @@ robovm {
 dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
-    implementation "io.github.dkimitsa.robovm:robopods-google-ump-ios:3.1.0.0"
+    implementation "io.github.dkimitsa.robovm:robopods-google-ump-ios:$podGoogleUmpVersion"
 }

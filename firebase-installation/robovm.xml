@@ -14,8 +14,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/core</path>
-        <path>../libs/firebase/inst</path>
+        <path>../../robovm-robopods/.robopods-wip/Firebase/FirebaseAnalytics</path>
     </frameworkPaths>
 
     <tools>

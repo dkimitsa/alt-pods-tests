@@ -14,8 +14,8 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/crashlytics</path>
-        <path>../libs/firebase/core</path>
+        <path>../../robovm-robopods/.robopods-wip/Firebase/FirebaseCrashlytics</path>
+        <path>../../robovm-robopods/.robopods-wip/Firebase/FirebaseAnalytics</path>
     </frameworkPaths>
 
     <tools>

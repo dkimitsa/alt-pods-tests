@@ -12,8 +12,10 @@ buildscript {
 
 apply plugin: 'java'
 apply plugin: 'robovm'
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
 
 repositories {
     mavenLocal()
@@ -28,5 +30,5 @@ dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
     implementation platform("io.github.dkimitsa.robovm:robopods-firebase-bom:$podFirebaseVersion")
-    implementation "io.github.dkimitsa.robovm:robopods-firebase-crashlytics-ios"
+    implementation "io.github.dkimitsa.robovm:robopods-firebase-crashlytics-ios:13.1.1.1"
 }

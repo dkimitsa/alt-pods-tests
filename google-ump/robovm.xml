@@ -14,7 +14,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/ump</path>
+        <path>../../robovm-robopods/.robopods-wip/GoogleMobileAdsSdkiOS</path>
     </frameworkPaths>
 
     <tools>

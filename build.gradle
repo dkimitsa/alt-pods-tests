@@ -1,0 +1,32 @@
+apply from: 'versions.gradle'
+
+tasks.register("validateFrameworks") {
+    group = "verification"
+    description = "Validates .robopods-wip frameworks against versions.gradle"
+
+    doLast {
+        def stripPatch = { String v -> v ? v.replaceFirst('\\.[0-9]+$', '') : v }
+
+        def frameworkVersions = [
+            'Facebook'                                         : stripPatch(podFacebookVersion),
+            'FBAudienceNetwork'                                : stripPatch(podFacebookAudienceVersion),
+            'Firebase'                                         : stripPatch(podFirebaseVersion),
+            'GoogleMobileAdsSdkiOS'                            : stripPatch(podGadVersion),
+            'CleverAdsSolutions/CleverAdsSolutions.xcframework': stripPatch(podCleverAdsVersion),
+            'GoogleSignIn'                                     : stripPatch(podGoogleSignInVersion)
+        ]
+
+        File wipDir = file("../robovm-robopods/.robopods-wip")
+        frameworkVersions.each { location, expectedVersion ->
+            File metaFile = new File(wipDir, "${location}/.version-metadata")
+            if (!metaFile.exists()) {
+                throw new GradleException("Framework metadata missing: ${metaFile.absolutePath}")
+            }
+            String actualVersion = metaFile.text.trim()
+            if (actualVersion != expectedVersion) {
+                throw new GradleException("Framework version mismatch for '${location}': expected '${expectedVersion}', found '${actualVersion}'")
+            }
+            println "[FRAMEWORK OK] ${location} -> ${actualVersion}"
+        }
+    }
+}

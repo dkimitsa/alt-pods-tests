@@ -11,8 +11,7 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/facebook/corebasics</path>
-        <path>../libs/facebook/aem</path>
+        <path>../../robovm-robopods/.robopods-wip/Facebook</path>
     </frameworkPaths>
 
     <tools>

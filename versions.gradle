@@ -1,8 +1,12 @@
 ext {
-    roboVMVersion = "2.3.24"
-    podFirebaseVersion = '12.9.0.0'
-    podFacebookVersion = '18.0.3.0'
-    podFacebookAudienceVersion = '6.21.0.0'
-    podGadVersion = '13.0.0.0'
+    roboVMVersion = "2.3.27"
+    podFirebaseVersion = '13.1.1.0'
+    podFacebookVersion = '19.0.1.0'
+    podFacebookAudienceVersion = '6.22.1.0'
+    podGadVersion = '13.12.0.0'
+    podCleverAdsVersion = '4.8.3.0'
+    podGoogleSignInVersion = '10.1.0.0'
+    podGoogleUmpVersion = '3.1.0.0'
+    podAdaptyVersion = '1.17.7.0'
     kotlin_version = '1.9.25'
 }

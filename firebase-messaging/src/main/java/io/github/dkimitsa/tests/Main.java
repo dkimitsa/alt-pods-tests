@@ -34,7 +34,25 @@ public class Main extends UIApplicationDelegateAdapter {
         FIRMessaging.messaging().setAPNSToken(deviceToken);
     }
 
+    private static void test() {
+        try (NSAutoreleasePool pool = new NSAutoreleasePool()) {
+            System.out.println("[SMOKE-TEST] Running DemoFirebaseMessaging in headless test mode...");
+            DemoFirebaseMessaging.demo();
+            System.out.println("[SMOKE-TEST] SUCCESS: DemoFirebaseMessaging");
+            System.exit(0);
+        } catch (Throwable t) {
+            System.err.println("[SMOKE-TEST] FAILED: DemoFirebaseMessaging");
+            t.printStackTrace(System.err);
+            System.exit(1);
+        }
+    }
+
     public static void main(String[] args) {
+        if (args.length > 0 && "--test".equals(args[0])) {
+            test();
+            return;
+        }
+
         try (NSAutoreleasePool pool = new NSAutoreleasePool()) {
             UIApplication.main(args, null, Main.class);
         }

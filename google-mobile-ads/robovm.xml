@@ -14,6 +14,6 @@
     </resources>
 
     <frameworkPaths>
-        <path>../libs/firebase/gad</path>
+        <path>../../robovm-robopods/.robopods-wip/GoogleMobileAdsSdkiOS</path>
     </frameworkPaths>
 </config>

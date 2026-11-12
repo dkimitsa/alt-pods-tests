@@ -18,6 +18,11 @@ public class DemoCleverAds {
 
 
     public static CASMediationManager manager;
+
+    public static void demo() {
+        didFinishLaunching(null, null);
+    }
+
     public static void didFinishLaunching(UIApplication application, UIApplicationLaunchOptions launchOptions) {
         // Set any CAS Settings before CAS.create
         CAS.settings().setDebugMode(true);

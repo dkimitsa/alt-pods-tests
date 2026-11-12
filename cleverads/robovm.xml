@@ -6,13 +6,12 @@
     <iosInfoPList>Info.plist.xml</iosInfoPList>
     <resources>
         <resource>
-            <path>../libs/cleverads/CASBaseResources.bundle</path>
-
+            <path>../../robovm-robopods/.robopods-wip/CleverAdsSolutions/CASBaseResources.bundle</path>
         </resource>
     </resources>
 
     <frameworkPaths>
-        <path>../libs/cleverads</path>
+        <path>../../robovm-robopods/.robopods-wip/CleverAdsSolutions</path>
     </frameworkPaths>
 
     <tools>
