@@ -47,6 +47,7 @@ DEFAULT_MODULES=(
     "google-mobile-ads-facebook"
     "google-mobile-ads-inmobi"
     "charts"
+    "helpshift"
 )
 
 MODULES=("${@:-${DEFAULT_MODULES[@]}}")

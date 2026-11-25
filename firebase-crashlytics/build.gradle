@@ -30,5 +30,5 @@ dependencies {
     implementation "com.mobidevelop.robovm:robovm-rt:${roboVMVersion}"
     implementation "com.mobidevelop.robovm:robovm-cocoatouch:${roboVMVersion}"
     implementation platform("io.github.dkimitsa.robovm:robopods-firebase-bom:$podFirebaseVersion")
-    implementation "io.github.dkimitsa.robovm:robopods-firebase-crashlytics-ios:13.1.1.1"
+    implementation "io.github.dkimitsa.robovm:robopods-firebase-crashlytics-ios"
 }

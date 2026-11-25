@@ -16,6 +16,7 @@ include ':google-mobile-ads-applovin'
 include ':google-mobile-ads-facebook'
 include ':google-mobile-ads-inmobi'
 include ':charts'
+include ':helpshift'
 
 include ':facebook-core-basics'
 include ':facebook-core'

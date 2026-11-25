@@ -29,7 +29,8 @@ tasks.register("validateFrameworks") {
             'AppLovinAdapter'                                  : stripPatch(podGadAppLovinAdapterVersion),
             'MetaAdapter'                                      : stripPatch(podGadFacebookAdapterVersion),
             'InMobiAdapter'                                    : stripPatch(podGadInMobiAdapterVersion),
-            'DGCharts.xcframework'                             : stripPatch(podChartsVersion)
+            'DGCharts.xcframework'                             : stripPatch(podChartsVersion),
+            'helpshiftx-sdk-ios'                               : stripPatch(podHelpshiftVersion)
         ]
 
         File wipDir = file("../robovm-robopods/.robopods-wip")
